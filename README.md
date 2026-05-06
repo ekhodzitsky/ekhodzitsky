@@ -1,58 +1,73 @@
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=30&duration=3000&pause=800&color=58A6FF&center=true&vCenter=true&width=700&lines=Rust+%7C+Speech+AI+%7C+Backend;Building+at+the+edge...;No+cloud.+No+keys.+No+problem.)](https://git.io/typing-svg)
+# Egor Khodzitsky
 
-**`Backend · On-Device ML · Systems`**
+### AI/backend builder for local-first voice systems
 
-</div>
+<samp>REAL-TIME SPEECH / RUST BACKENDS / ON-DEVICE INFERENCE</samp>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ekhodzitsky/ekhodzitsky/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ekhodzitsky/ekhodzitsky/output/github-contribution-grid-snake.svg">
-  <img alt="Contribution Snake" src="https://raw.githubusercontent.com/ekhodzitsky/ekhodzitsky/output/github-contribution-grid-snake.svg">
-</picture>
+I build the backend pieces for real-time translation and voice assistants:
+speech recognition, speaker timelines, streaming APIs, and private inference runtimes.
 
----
-
-<div align="center">
-
-<img height="150" src="https://github-readme-stats.vercel.app/api?username=ekhodzitsky&show_icons=true&theme=github_dark&hide_border=true&count_private=true&hide_title=true">
-<img height="150" src="https://github-readme-streak-stats.herokuapp.com/?user=ekhodzitsky&theme=github-dark&hide_border=true&hide_title=true">
-<img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ekhodzitsky&layout=compact&theme=github_dark&hide_border=true&hide_title=true&langs_count=6">
+[Telegram](https://t.me/ekhodzitsky) / [Email](mailto:e@khodzitsky.ru) / [Habr Career](https://career.habr.com/ekhodzitsky)
 
 </div>
 
 ---
 
-<div align="center">
+## Voice Lab
 
-<img src="https://img.shields.io/badge/Rust-000?logo=rust&logoColor=white&style=flat-square" height="22">
-<img src="https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white&style=flat-square" height="22">
-<img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white&style=flat-square" height="22">
-<img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=flat-square" height="22">
-<img src="https://img.shields.io/badge/Go-00ADD8?logo=go&logoColor=white&style=flat-square" height="22">
-<img src="https://img.shields.io/badge/Swift-F05138?logo=swift&logoColor=white&style=flat-square" height="22">
-<br>
-<img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white&style=flat-square" height="22">
-<img src="https://img.shields.io/badge/ONNX-005CED?logo=onnx&logoColor=white&style=flat-square" height="22">
-<img src="https://img.shields.io/badge/NestJS-E0234E?logo=nestjs&logoColor=white&style=flat-square" height="22">
-<img src="https://img.shields.io/badge/Tokio-000?logo=rust&logoColor=white&style=flat-square" height="22">
-<img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white&style=flat-square" height="22">
+```text
+audio in
+   -> on-device STT
+   -> speaker timeline
+   -> translation / assistant core
+   -> low-latency response loop
+```
 
-</div>
+I care about systems that are fast enough to feel live, boring enough to run in production,
+and private enough to work without shipping every word to a cloud API.
+
+---
+
+## Building Blocks
+
+| Project | Signal | Role in the stack |
+| --- | --- | --- |
+| [gigastt](https://github.com/ekhodzitsky/gigastt) | Russian STT | Local GigaAM v3 speech server with WebSocket/REST, ONNX Runtime, CoreML/CUDA paths, and 10.4% WER benchmark notes. |
+| [polyvoice](https://docs.rs/polyvoice/latest/polyvoice/) | Diarization | Rust library for online/offline speaker diarization: who spoke, when, and how to attach that to transcript words. |
+| [phostt](https://docs.rs/crate/phostt/0.2.2) | Vietnamese STT | Zipformer-vi RNN-T server path for local Vietnamese speech recognition, built on the same real-time server ideas. |
+| [nihostt](https://docs.rs/nihostt/latest/nihostt/) | Japanese STT | ReazonSpeech-k2-v2 based local Japanese STT runtime with VAD streaming and ONNX inference plumbing. |
+
+These are not isolated demos. They are pieces of a broader voice stack:
+language-specific STT, speaker awareness, streaming transport, and assistant-ready infrastructure.
+
+---
+
+## Operating Principles
+
+- Local-first by default: no API keys as the happy path.
+- Streaming before batch: partial results, backpressure, and protocol design matter.
+- Rust where the edges are sharp: inference pools, typed errors, FFI, and long-running services.
+- Production surface area: timeouts, limits, metrics, graceful shutdown, and sane defaults.
+
+---
+
+## Stack I Reach For
+
+<p>
+  <img src="https://img.shields.io/badge/Rust-111?logo=rust&logoColor=white&style=flat-square" alt="Rust">
+  <img src="https://img.shields.io/badge/Tokio-111?logo=rust&logoColor=white&style=flat-square" alt="Tokio">
+  <img src="https://img.shields.io/badge/Axum-111?logo=rust&logoColor=white&style=flat-square" alt="Axum">
+  <img src="https://img.shields.io/badge/ONNX_Runtime-111?logo=onnx&logoColor=white&style=flat-square" alt="ONNX Runtime">
+  <img src="https://img.shields.io/badge/TypeScript-111?logo=typescript&logoColor=white&style=flat-square" alt="TypeScript">
+  <img src="https://img.shields.io/badge/PostgreSQL-111?logo=postgresql&logoColor=white&style=flat-square" alt="PostgreSQL">
+</p>
 
 ---
 
 <div align="center">
 
-[![Telegram](https://img.shields.io/badge/-@ekhodzitsky-2CA5E0?logo=telegram&logoColor=white&style=flat-square)](https://t.me/ekhodzitsky)
-[![Email](https://img.shields.io/badge/-e@khodzitsky.ru-EA4335?logo=gmail&logoColor=white&style=flat-square)](mailto:e@khodzitsky.ru)
-[![Habr](https://img.shields.io/badge/-Habr_Career-65A3BE?logo=habr&logoColor=white&style=flat-square)](https://career.habr.com/ekhodzitsky)
-
-</div>
-
-<div align="center">
-
-[![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)](https://github.com/piyushsuthar/github-readme-quotes)
+<samp>Building voice systems that can run close to the user.</samp>
 
 </div>

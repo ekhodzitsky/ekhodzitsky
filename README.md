@@ -9,6 +9,9 @@
 
 <br>
 
+<!-- GitHub Trophies -->
+[![trophy](https://github-profile-trophy.vercel.app/?username=ekhodzitsky&theme=onestar&no-frame=true&row=1&column=6)](https://github.com/ryo-ma/github-profile-trophy)
+
 </div>
 
 ---
@@ -82,8 +85,19 @@ My side passion is **private voice AI at the edge** — all built in Rust:
 
 <div align="center">
 
+<!-- GitHub Stats -->
 <img height="160" src="https://github-readme-stats.vercel.app/api?username=ekhodzitsky&show_icons=true&theme=github_dark&hide_border=true&count_private=true" />
 <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ekhodzitsky&layout=compact&theme=github_dark&hide_border=true&langs_count=8" />
+
+<br><br>
+
+<!-- Streak Stats -->
+<img height="160" src="https://github-readme-streak-stats.herokuapp.com/?user=ekhodzitsky&theme=github-dark&hide_border=true" />
+
+<br><br>
+
+<!-- Activity Graph -->
+<img width="800" src="https://github-readme-activity-graph.vercel.app/graph?username=ekhodzitsky&theme=github-dark&hide_border=true" />
 
 </div>
 
@@ -113,7 +127,7 @@ Senior backend-разработчик с **8+ годами** production-опыт
 
 | Период | Компания | Роль | Фокус |
 |--------|----------|------|-------|
-| 2024 — сейчас | Гринатом | Senior Backend | NestJS, Prisma, FastAPI, Django, PostgreSQL, BullMQ |
+| 2024 — сейчас | Гринатом (Газпром) | Senior Backend | NestJS, Prisma, FastAPI, Django, PostgreSQL, BullMQ |
 | 2022 — 2024 | Инсис | Senior Backend | Node.js, RADIUS, Битрикс24, SMS/push-уведомления, микросервисы |
 | 2021 — 2022 | Инсис | Middle Backend | Интеграции (платежи, телефония Битрикс24, asodesk), Telegram-боты |
 | 2020 | КонкурсДок | Middle Backend | NestJS, GraphQL, Puppeteer, автоматизация тендерной документации |
@@ -169,6 +183,14 @@ Senior backend-разработчик с **8+ годами** production-опыт
 
 <img height="160" src="https://github-readme-stats.vercel.app/api?username=ekhodzitsky&show_icons=true&theme=github_dark&hide_border=true&count_private=true" />
 <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ekhodzitsky&layout=compact&theme=github_dark&hide_border=true&langs_count=8" />
+
+<br><br>
+
+<img height="160" src="https://github-readme-streak-stats.herokuapp.com/?user=ekhodzitsky&theme=github-dark&hide_border=true" />
+
+<br><br>
+
+<img width="800" src="https://github-readme-activity-graph.vercel.app/graph?username=ekhodzitsky&theme=github-dark&hide_border=true" />
 
 </div>
 

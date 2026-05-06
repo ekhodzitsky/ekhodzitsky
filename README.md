@@ -6,6 +6,23 @@
 
 </div>
 
+<div align="center">
+
+<img src="https://img.shields.io/github/followers/ekhodzitsky?style=flat-square&logo=github&label=Followers&color=58A6FF" height="22">
+<img src="https://img.shields.io/github/stars/ekhodzitsky?style=flat-square&logo=github&label=Stars&color=58A6FF" height="22">
+<img src="https://img.shields.io/github/repos/ekhodzitsky?style=flat-square&logo=github&label=Repos&color=58A6FF" height="22">
+<img src="https://komarev.com/ghpvc/?username=ekhodzitsky&color=58a6ff&style=flat-square" height="22">
+
+</div>
+
+---
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-rainbow.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./profile-3d-contrib/profile-season-animate.svg">
+  <img alt="3D Contribution Graph" src="./profile-3d-contrib/profile-night-rainbow.svg">
+</picture>
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ekhodzitsky/ekhodzitsky/output/github-contribution-grid-snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ekhodzitsky/ekhodzitsky/output/github-contribution-grid-snake.svg">
@@ -16,8 +33,7 @@
 
 <div align="center">
 
-<img height="160" src="https://github-readme-stats.vercel.app/api?username=ekhodzitsky&show_icons=true&theme=github_dark&hide_border=true&hide_title=true">
-<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ekhodzitsky&layout=compact&theme=github_dark&hide_border=true&hide_title=true&langs_count=6">
+<img src="https://github-profile-trophy.vercel.app/?username=ekhodzitsky&theme=darkhub&no-frame=true&column=4&margin-w=8&margin-h=8">
 
 </div>
 
@@ -71,7 +87,11 @@
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=ekhodzitsky&theme=github-dark&hide_border=true" width="100%">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=ekhodzitsky&theme=github-dark&hide_border=true">
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=ekhodzitsky&theme=github-light&hide_border=true">
+  <img alt="Activity Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=ekhodzitsky&theme=github-dark&hide_border=true" width="100%">
+</picture>
 
 </div>
 

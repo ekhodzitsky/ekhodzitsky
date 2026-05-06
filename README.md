@@ -18,10 +18,12 @@
 ---
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-rainbow.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./profile-3d-contrib/profile-season-animate.svg">
-  <img alt="3D Contribution Graph" src="./profile-3d-contrib/profile-night-rainbow.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-green.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./profile-3d-contrib/profile-green.svg">
+  <img alt="3D Contribution Graph" src="./profile-3d-contrib/profile-night-green.svg">
 </picture>
+
+---
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ekhodzitsky/ekhodzitsky/output/github-contribution-grid-snake-dark.svg">
@@ -33,7 +35,11 @@
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=ekhodzitsky&theme=darkhub&no-frame=true&column=4&margin-w=8&margin-h=8">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-trophy.vercel.app/?username=ekhodzitsky&theme=darkhub&no-frame=true&column=-1&margin-w=8&margin-h=8">
+  <source media="(prefers-color-scheme: light)" srcset="https://github-profile-trophy.vercel.app/?username=ekhodzitsky&theme=gitdimmed&no-frame=true&column=-1&margin-w=8&margin-h=8">
+  <img alt="GitHub Trophies" src="https://github-profile-trophy.vercel.app/?username=ekhodzitsky&theme=darkhub&no-frame=true&column=-1&margin-w=8&margin-h=8">
+</picture>
 
 </div>
 

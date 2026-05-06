@@ -45,20 +45,6 @@
 
 <div align="center">
 
-[![gigastt](https://img.shields.io/badge/gigastt-Russian_STT_10.4%25_WER-000?logo=rust&logoColor=white&style=for-the-badge)](https://github.com/ekhodzitsky/gigastt)
-[![voxrs](https://img.shields.io/badge/voxrs-Multilingual_Streaming_STT-000?logo=rust&logoColor=white&style=for-the-badge)](https://github.com/ekhodzitsky/voxrs)
-[![polyvoice](https://img.shields.io/badge/polyvoice-Speaker_Diarization-000?logo=rust&logoColor=white&style=for-the-badge)](https://github.com/ekhodzitsky/polyvoice)
-<br>
-[![call-assistant](https://img.shields.io/badge/call_assistant-AI_Call_Assistant-F05138?logo=swift&logoColor=white&style=for-the-badge)](https://github.com/ekhodzitsky/call-assistant)
-[![parley](https://img.shields.io/badge/parley-Offline_Translator-000?logo=rust&logoColor=white&style=for-the-badge)](https://github.com/ekhodzitsky/parley)
-[![nllb-translate](https://img.shields.io/badge/nllb_translate-Local_NLLB--200-000?logo=rust&logoColor=white&style=for-the-badge)](https://github.com/ekhodzitsky/nllb-translate)
-
-</div>
-
----
-
-<div align="center">
-
 [![Telegram](https://img.shields.io/badge/-@ekhodzitsky-2CA5E0?logo=telegram&logoColor=white&style=flat-square)](https://t.me/ekhodzitsky)
 [![Email](https://img.shields.io/badge/-e@khodzitsky.ru-EA4335?logo=gmail&logoColor=white&style=flat-square)](mailto:e@khodzitsky.ru)
 [![Habr](https://img.shields.io/badge/-Habr_Career-65A3BE?logo=habr&logoColor=white&style=flat-square)](https://career.habr.com/ekhodzitsky)

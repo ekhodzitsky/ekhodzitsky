@@ -1,6 +1,6 @@
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=30&duration=3000&pause=800&color=58A6FF&center=true&vCenter=true&width=700&lines=Rust+%7C+Speech+AI+%7C+Backend;Building+at+the+edge...;No+cloud.+No+keys.+No+problem.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=28&duration=3000&pause=800&color=0969DA&center=true&vCenter=true&width=620&lines=Rust+%7C+Speech+AI+%7C+Backend;On-device+ASR+%26+diarization+in+Rust;No+API+keys.+No+cloud.+No+excuses.)](https://github.com/ekhodzitsky)
 
 **`Backend · On-Device ML · Systems`**
 
@@ -8,10 +8,9 @@
 
 <div align="center">
 
-<img src="https://img.shields.io/github/followers/ekhodzitsky?style=flat-square&logo=github&label=Followers&color=58A6FF" height="22">
-<img src="https://img.shields.io/github/stars/ekhodzitsky?style=flat-square&logo=github&label=Stars&color=58A6FF" height="22">
-<img src="https://img.shields.io/github/repos/ekhodzitsky?style=flat-square&logo=github&label=Repos&color=58A6FF" height="22">
-<img src="https://komarev.com/ghpvc/?username=ekhodzitsky&color=58a6ff&style=flat-square" height="22">
+<img src="https://img.shields.io/github/followers/ekhodzitsky?style=flat-square&logo=github&label=Followers&color=0969DA" height="22">
+<img src="https://img.shields.io/github/stars/ekhodzitsky?style=flat-square&logo=github&label=Stars&color=0969DA" height="22">
+<img src="https://img.shields.io/github/repos/ekhodzitsky?style=flat-square&logo=github&label=Repos&color=0969DA" height="22">
 
 </div>
 
@@ -25,79 +24,38 @@
 
 ---
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ekhodzitsky/ekhodzitsky/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ekhodzitsky/ekhodzitsky/output/github-contribution-grid-snake.svg">
-  <img alt="Contribution Snake" src="https://raw.githubusercontent.com/ekhodzitsky/ekhodzitsky/output/github-contribution-grid-snake.svg">
-</picture>
-
----
-
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-trophy.vercel.app/?username=ekhodzitsky&theme=darkhub&no-frame=true&column=-1&margin-w=8&margin-h=8">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-profile-trophy.vercel.app/?username=ekhodzitsky&theme=gitdimmed&no-frame=true&column=-1&margin-w=8&margin-h=8">
-  <img alt="GitHub Trophies" src="https://github-profile-trophy.vercel.app/?username=ekhodzitsky&theme=darkhub&no-frame=true&column=-1&margin-w=8&margin-h=8">
-</picture>
-
-</div>
-
----
-
-<div align="center">
-
-**Languages & Runtimes**
+**Core stack**
 <br>
 <img src="https://img.shields.io/badge/Rust-000?logo=rust&logoColor=white&style=flat-square" height="22">
-<img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white&style=flat-square" height="22">
-<img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=flat-square" height="22">
-<img src="https://img.shields.io/badge/Go-00ADD8?logo=go&logoColor=white&style=flat-square" height="22">
-<img src="https://img.shields.io/badge/Swift-F05138?logo=swift&logoColor=white&style=flat-square" height="22">
-<br><br>
-**Voice & Data Stack**
-<br>
 <img src="https://img.shields.io/badge/ONNX-005CED?logo=onnx&logoColor=white&style=flat-square" height="22">
-<img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white&style=flat-square" height="22">
-<img src="https://img.shields.io/badge/Tokio-000?logo=rust&logoColor=white&style=flat-square" height="22">
-<br><br>
-**Frameworks & DevOps**
-<br>
-<img src="https://img.shields.io/badge/NestJS-E0234E?logo=nestjs&logoColor=white&style=flat-square" height="22">
-<img src="https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white&style=flat-square" height="22">
-<img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white&style=flat-square" height="22">
+<img src="https://img.shields.io/badge/Tokio-000?logo=tokio&logoColor=white&style=flat-square" height="22">
+<img src="https://img.shields.io/badge/PostgreSQL-1F6FCC?logo=postgresql&logoColor=white&style=flat-square" height="22">
 
 </div>
 
 ---
 
-### 🔥 Featured
+### About
 
-<div align="center">
+Systems engineer focused on **on-device speech AI** in Rust.  
+Building local-first STT and speaker diarization pipelines with zero cloud dependencies.
 
-<a href="https://github.com/ekhodzitsky/gigastt"><strong>gigastt</strong></a> — Local STT server powered by GigaAM v3<br>
-<img src="https://img.shields.io/github/stars/ekhodzitsky/gigastt?style=flat-square&logo=github&color=58A6FF">
-<img src="https://img.shields.io/github/languages/top/ekhodzitsky/gigastt?style=flat-square">
-<br><br>
-<a href="https://github.com/ekhodzitsky/polyvoice"><strong>polyvoice</strong></a> — Speaker diarization for Rust. Silero VAD + WeSpeaker + AHC<br>
-<img src="https://img.shields.io/github/stars/ekhodzitsky/polyvoice?style=flat-square&logo=github&color=58A6FF">
-<img src="https://img.shields.io/github/languages/top/ekhodzitsky/polyvoice?style=flat-square">
-<br><br>
-<a href="https://github.com/ekhodzitsky/cargo-kimi"><strong>cargo-kimi</strong></a> — Cargo subcommand for structured contracts & Rust verification<br>
-<img src="https://img.shields.io/github/stars/ekhodzitsky/cargo-kimi?style=flat-square&logo=github&color=58A6FF">
-<img src="https://img.shields.io/github/languages/top/ekhodzitsky/cargo-kimi?style=flat-square">
-
-</div>
+Previously worked across backend, distributed systems and ML inference optimization.  
+Open to collaborations on Rust audio/ML tooling and high-performance systems.
 
 ---
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=ekhodzitsky&theme=github-dark&hide_border=true">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=ekhodzitsky&theme=github-light&hide_border=true">
-  <img alt="Activity Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=ekhodzitsky&theme=github-dark&hide_border=true" width="100%">
-</picture>
+**Featured projects**
+
+<a href="https://github.com/ekhodzitsky/gigastt"><strong>gigastt</strong></a> — Local STT server powered by GigaAM v3
+
+<a href="https://github.com/ekhodzitsky/polyvoice"><strong>polyvoice</strong></a> — Who spoke when, without Python. Silero VAD + WeSpeaker + AHC in one Pipeline::run()
+
+<sub>Bonus — Rust tooling: <a href="https://github.com/ekhodzitsky/cargo-kimi"><strong>cargo-kimi</strong></a>, cargo subcommand for structured contracts &amp; Hoare-triple verification.</sub>
 
 </div>
 
@@ -105,8 +63,7 @@
 
 <div align="center">
 
-[![Telegram](https://img.shields.io/badge/-@ekhodzitsky-2CA5E0?logo=telegram&logoColor=white&style=flat-square)](https://t.me/ekhodzitsky)
-[![Email](https://img.shields.io/badge/-e@khodzitsky.ru-EA4335?logo=gmail&logoColor=white&style=flat-square)](mailto:e@khodzitsky.ru)
+[![Telegram](https://img.shields.io/badge/-%40ekhodzitsky-2CA5E0?logo=telegram&logoColor=white&style=flat-square)](https://t.me/ekhodzitsky)
 [![Habr](https://img.shields.io/badge/-Habr_Career-65A3BE?logo=habr&logoColor=white&style=flat-square)](https://career.habr.com/ekhodzitsky)
 
 </div>

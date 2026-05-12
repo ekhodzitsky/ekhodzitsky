@@ -13,3 +13,8 @@
 # Temporary files
 *.tmp
 *.temp
+
+# Agent / orchestrator state — never publish
+.omc/
+.omx/
+.claude/

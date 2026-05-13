@@ -2,10 +2,6 @@
 
 **`Senior Backend · On-Device Speech AI · Agentic Systems`**
 
-<img src="https://img.shields.io/github/followers/ekhodzitsky?style=flat-square&logo=github&label=Followers&color=0969DA" height="22">
-<img src="https://img.shields.io/github/stars/ekhodzitsky?style=flat-square&logo=github&label=Stars&color=0969DA" height="22">
-<img src="https://img.shields.io/github/repos/ekhodzitsky?style=flat-square&logo=github&label=Repos&color=0969DA" height="22">
-
 </div>
 
 ---

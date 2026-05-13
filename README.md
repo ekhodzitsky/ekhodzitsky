@@ -1,12 +1,8 @@
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=28&duration=3000&pause=800&color=0969DA&center=true&vCenter=true&width=620&lines=Rust+%7C+Speech+AI+%7C+Backend;On-device+ASR+%26+diarization+in+Rust;No+API+keys.+No+cloud.+No+excuses.)](https://github.com/ekhodzitsky)
+# Evgeny Khodzitsky
 
-**`Backend · On-Device ML · Systems`**
-
-</div>
-
-<div align="center">
+**`Senior Backend · On-Device Speech AI · Agentic Systems`**
 
 <img src="https://img.shields.io/github/followers/ekhodzitsky?style=flat-square&logo=github&label=Followers&color=0969DA" height="22">
 <img src="https://img.shields.io/github/stars/ekhodzitsky?style=flat-square&logo=github&label=Stars&color=0969DA" height="22">
@@ -16,48 +12,44 @@
 
 ---
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-green.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./profile-3d-contrib/profile-green.svg">
-  <img alt="3D Contribution Graph" src="./profile-3d-contrib/profile-night-green.svg">
-</picture>
-
----
-
-<div align="center">
-
-**Core stack**
-<br>
-<img src="https://img.shields.io/badge/Rust-000?logo=rust&logoColor=white&style=flat-square" height="22">
-<img src="https://img.shields.io/badge/ONNX-005CED?logo=onnx&logoColor=white&style=flat-square" height="22">
-<img src="https://img.shields.io/badge/Tokio-000?logo=tokio&logoColor=white&style=flat-square" height="22">
-<img src="https://img.shields.io/badge/PostgreSQL-1F6FCC?logo=postgresql&logoColor=white&style=flat-square" height="22">
-
-</div>
-
----
-
 ### About
 
-Systems engineer focused on **on-device speech AI** in Rust.  
-Building local-first STT and speaker diarization pipelines with zero cloud dependencies.
+Senior backend engineer — **8+ years in production**.
 
-Previously worked across backend, distributed systems and ML inference optimization.  
-Open to collaborations on Rust audio/ML tooling and high-performance systems.
+- **Node.js / TypeScript** (NestJS, Moleculer) — REST APIs from scratch, API gateways, message brokers, payment & telephony integrations, legacy refactors at ~20k LOC scale.
+- **Python** (FastAPI, Django) — email pipelines on APScheduler + SMTP, document generation (PDF/DOCX) at template-set scale.
+- **Rust** — current focus: on-device speech AI and agentic developer tools.
+
+Local-first by default: zero cloud APIs, zero vendor lock-in, models that ship inside the binary.
 
 ---
 
 <div align="center">
 
-**Featured projects**
-
-<a href="https://github.com/ekhodzitsky/gigastt"><strong>gigastt</strong></a> — Local STT server powered by GigaAM v3
-
-<a href="https://github.com/ekhodzitsky/polyvoice"><strong>polyvoice</strong></a> — Who spoke when, without Python. Silero VAD + WeSpeaker + AHC in one Pipeline::run()
-
-<sub>Bonus — Rust tooling: <a href="https://github.com/ekhodzitsky/cargo-kimi"><strong>cargo-kimi</strong></a>, cargo subcommand for structured contracts &amp; Hoare-triple verification.</sub>
+<img src="https://img.shields.io/badge/Rust-000?logo=rust&logoColor=white&style=flat-square" height="22">
+<img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white&style=flat-square" height="22">
+<img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=flat-square" height="22">
 
 </div>
+
+---
+
+### Open source
+
+**Speech AI** — Rust + ONNX Runtime, fully offline. `cargo install …` or `pip install …`.
+
+- [**`gigastt`**](https://github.com/ekhodzitsky/gigastt) — Russian STT (GigaAM v3) · **11.4% WER**, **~700 ms** for 16 s on M1, INT8 with 0% accuracy loss
+- [**`polyvoice`**](https://github.com/ekhodzitsky/polyvoice) — Speaker diarization without Python · **DER ~14%** VoxConverse, **~23%** AMI · **10× realtime on CPU**, ~80% of pyannote accuracy
+- [**`phonex`**](https://github.com/ekhodzitsky/phonex) — Generic on-device STT engine · **10+ languages**, ~70 ms / 5 s clip, single binary
+- [**`nihostt`**](https://github.com/ekhodzitsky/nihostt) — Japanese STT (ReazonSpeech-k2-v2) · **CER ~1.1%** (clean) / **8%** (full 309-clip bench) · ~200 ms latency, INT8 ~155 MB
+- [**`phostt`**](https://github.com/ekhodzitsky/phostt) — Vietnamese STT (Zipformer-vi RNN-T) · ~75 MB model · `crates.io` + `pypi`
+- [**`localmt`**](https://github.com/ekhodzitsky/localmt) — Offline Android translation SDK · GGUF + llama.cpp via JNI, arm64-v8a target
+
+**Agentic developer tools** — Kimi ecosystem
+
+- [**`oh-my-kimi`**](https://github.com/ekhodzitsky/oh-my-kimi) — Wire-first orchestration for Kimi CLI · scheduler-backed teams, ownership conflict detection, verification gates, proof/failure artifacts
+- [**`cargo-kimi`**](https://github.com/ekhodzitsky/cargo-kimi) — Cargo subcommand that scores Rust files **0–100** on contract quality (Hoare triples, panic safety, typestate, size, `Result` discipline) with LSP server · on `crates.io`
+- [**`kimi-guidelines`**](https://github.com/ekhodzitsky/kimi-guidelines) — Composable configs, instructions, and skills for Kimi K2.6
 
 ---
 

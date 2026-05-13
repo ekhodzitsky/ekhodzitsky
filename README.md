@@ -16,6 +16,8 @@ Senior backend engineer — **8+ years in production**.
 
 Local-first by default: zero cloud APIs, zero vendor lock-in, models that ship inside the binary.
 
+**Currently shipping:** [`oh-my-kimi`](https://github.com/ekhodzitsky/oh-my-kimi) — wire-first Rust agent runtime · [`localmt`](https://github.com/ekhodzitsky/localmt) — offline Android translation SDK targeting Redmi Note 14 airplane-mode proof.
+
 ---
 
 <div align="center">
@@ -28,11 +30,24 @@ Local-first by default: zero cloud APIs, zero vendor lock-in, models that ship i
 
 ---
 
+### 🚀 Flagship — [`gigastt`](https://github.com/ekhodzitsky/gigastt)
+
+**Russian speech recognition on M1 in 700 ms. 11.4% WER. One binary. No cloud.**
+
+```sh
+cargo install gigastt && gigastt serve
+# WebSocket: ws://127.0.0.1:9876/v1/ws
+# REST API:  http://127.0.0.1:9876/v1/transcribe
+```
+
+GigaAM v3 + ONNX Runtime · INT8 with 0% accuracy loss · WebSocket streaming + REST · Homebrew tap · CoreML / CUDA / CPU · v2.0.3
+
+---
+
 ### Open source
 
-**Speech AI** — Rust + ONNX Runtime, fully offline. `cargo install …` or `pip install …`.
+**Speech AI** — Rust + ONNX Runtime, fully offline
 
-- [**`gigastt`**](https://github.com/ekhodzitsky/gigastt) — Russian STT (GigaAM v3) · **11.4% WER**, **~700 ms** for 16 s on M1, INT8 with 0% accuracy loss
 - [**`polyvoice`**](https://github.com/ekhodzitsky/polyvoice) — Speaker diarization without Python · **DER ~14%** VoxConverse, **~23%** AMI · **10× realtime on CPU**, ~80% of pyannote accuracy
 - [**`phonex`**](https://github.com/ekhodzitsky/phonex) — Generic on-device STT engine · **10+ languages**, ~70 ms / 5 s clip, single binary
 - [**`nihostt`**](https://github.com/ekhodzitsky/nihostt) — Japanese STT (ReazonSpeech-k2-v2) · **CER ~1.1%** (clean) / **8%** (full 309-clip bench) · ~200 ms latency, INT8 ~155 MB

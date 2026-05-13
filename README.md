@@ -54,6 +54,6 @@ Local-first by default: zero cloud APIs, zero vendor lock-in, models that ship i
 <div align="center">
 
 [![Telegram](https://img.shields.io/badge/-%40ekhodzitsky-2CA5E0?logo=telegram&logoColor=white&style=flat-square)](https://t.me/ekhodzitsky)
-[![Habr](https://img.shields.io/badge/-Habr_Career-65A3BE?logo=habr&logoColor=white&style=flat-square)](https://career.habr.com/ekhodzitsky)
+[![Email](https://img.shields.io/badge/-e%40khodzitsky.ru-EA4335?logo=gmail&logoColor=white&style=flat-square)](mailto:e@khodzitsky.ru)
 
 </div>

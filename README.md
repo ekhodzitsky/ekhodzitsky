@@ -1,7 +1,5 @@
 <div align="center">
 
-# Evgeny Khodzitsky
-
 **`Senior Backend · On-Device Speech AI · Agentic Systems`**
 
 <img src="https://img.shields.io/github/followers/ekhodzitsky?style=flat-square&logo=github&label=Followers&color=0969DA" height="22">

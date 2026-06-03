@@ -16,7 +16,7 @@ Senior backend engineer — **8+ years in production**.
 
 Local-first by default: zero cloud APIs, zero vendor lock-in, models that ship inside the binary.
 
-**Currently shipping:** [`oh-my-kimi`](https://github.com/ekhodzitsky/oh-my-kimi) — wire-first Rust agent runtime · [`localmt`](https://github.com/ekhodzitsky/localmt) — offline Android translation SDK targeting Redmi Note 14 airplane-mode proof.
+**Currently shipping:** [`omk`](https://github.com/ekhodzitsky/omk) — Wire-first orchestration for Kimi CLI · [`localmt`](https://github.com/ekhodzitsky/localmt) — offline Android translation SDK, airplane-mode proof on Redmi Note 14.
 
 ---
 
@@ -32,7 +32,7 @@ Local-first by default: zero cloud APIs, zero vendor lock-in, models that ship i
 
 ### 🚀 Flagship — [`gigastt`](https://github.com/ekhodzitsky/gigastt)
 
-**Russian speech recognition on M1 in 700 ms. 11.4% WER. One binary. No cloud.**
+**Russian speech recognition on M1 — 16 s of audio in ~700 ms. 11.4% WER. One binary. No cloud.**
 
 ```sh
 cargo install gigastt && gigastt serve
@@ -40,7 +40,7 @@ cargo install gigastt && gigastt serve
 # REST API:  http://127.0.0.1:9876/v1/transcribe
 ```
 
-GigaAM v3 + ONNX Runtime · INT8 with 0% accuracy loss · WebSocket streaming + REST · Homebrew tap · CoreML / CUDA / CPU · v2.0.3
+GigaAM v3 + ONNX Runtime · INT8 with 0% WER loss · WebSocket streaming + REST · Homebrew tap · CoreML / CUDA / CPU
 
 ---
 
@@ -50,15 +50,26 @@ GigaAM v3 + ONNX Runtime · INT8 with 0% accuracy loss · WebSocket streaming + 
 
 - [**`polyvoice`**](https://github.com/ekhodzitsky/polyvoice) — Speaker diarization without Python · **DER ~14%** VoxConverse, **~23%** AMI · **10× realtime on CPU**, ~80% of pyannote accuracy
 - [**`phonex`**](https://github.com/ekhodzitsky/phonex) — Generic on-device STT engine · **10+ languages**, ~70 ms / 5 s clip, single binary
-- [**`nihostt`**](https://github.com/ekhodzitsky/nihostt) — Japanese STT (ReazonSpeech-k2-v2) · **CER ~1.1%** (clean) / **8%** (full 309-clip bench) · ~200 ms latency, INT8 ~155 MB
+- [**`nihostt`**](https://github.com/ekhodzitsky/nihostt) — Japanese STT (ReazonSpeech-k2-v2) · **CER ~1.1%** (clean) / **~8%** (full 309-clip bench) · ~200 ms latency, INT8 ~155 MB
 - [**`phostt`**](https://github.com/ekhodzitsky/phostt) — Vietnamese STT (Zipformer-vi RNN-T) · ~75 MB model · `crates.io` + `pypi`
-- [**`localmt`**](https://github.com/ekhodzitsky/localmt) — Offline Android translation SDK · GGUF + llama.cpp via JNI, arm64-v8a target
 
-**Agentic developer tools** — Kimi ecosystem
+**On-device translation** — Rust + llama.cpp, fully offline
 
-- [**`oh-my-kimi`**](https://github.com/ekhodzitsky/oh-my-kimi) — Wire-first orchestration for Kimi CLI · scheduler-backed teams, ownership conflict detection, verification gates, proof/failure artifacts
+- [**`localmt`**](https://github.com/ekhodzitsky/localmt) — Offline Android translation SDK in Rust · **GGUF/Hy-MT** packs, llama.cpp via JNI, arm64-v8a
+
+**Agentic developer tools**
+
+*Kimi ecosystem*
+
+- [**`omk`**](https://github.com/ekhodzitsky/omk) — Wire-first orchestration for Kimi CLI · scheduler-backed teams, ownership conflict detection, verification gates, proof/failure artifacts
+- [**`kimi-wire`**](https://github.com/ekhodzitsky/kimi-wire) — Typed Rust client for the Kimi CLI **Wire protocol** · the layer `omk` builds on
 - [**`cargo-kimi`**](https://github.com/ekhodzitsky/cargo-kimi) — Cargo subcommand that scores Rust files **0–100** on contract quality (Hoare triples, panic safety, typestate, size, `Result` discipline) with LSP server · on `crates.io`
-- [**`kimi-guidelines`**](https://github.com/ekhodzitsky/kimi-guidelines) — Composable configs, instructions, and skills for Kimi K2.6
+- [**`coad`**](https://github.com/ekhodzitsky/coad) — **Contract-Orchestrated Agent Development** · methodology for safe, reviewable, bounded agent work
+- [**`kimi-guidelines`**](https://github.com/ekhodzitsky/kimi-guidelines) — Composable configs, instructions, and skills for Kimi K2
+
+*General agent tooling*
+
+- [**`gitr`**](https://github.com/ekhodzitsky/gitr) — Async **typed git CLI** wrapper for agents and automation
 
 ---
 

@@ -66,7 +66,7 @@ GigaAM v3 + ONNX Runtime · INT8 with 0% WER loss · WebSocket streaming + REST 
 - [**`kimi-lite`**](https://github.com/ekhodzitsky/kimi-lite) — Native AI coding CLI in **Go** · single binary, zero runtime deps, <50 ms cold start
 - [**`cargo-kimi`**](https://github.com/ekhodzitsky/cargo-kimi) — Cargo subcommand that scores Rust files **0–100** on contract quality (Hoare triples, panic safety, typestate, size, `Result` discipline) with LSP server · on `crates.io`
 - [**`coad`**](https://github.com/ekhodzitsky/coad) — **Contract-Orchestrated Agent Development** · methodology for safe, reviewable, bounded agent work
-- [**`kimi-guidelines`**](https://github.com/ekhodzitsky/kimi-guidelines) — Composable configs, instructions, and skills for Kimi K2.6
+- [**`kimi-dotfiles`**](https://github.com/ekhodzitsky/kimi-dotfiles) — Composable configs, instructions, and skills for Kimi K2.6
 - [**`omk`**](https://github.com/ekhodzitsky/omk) — Wire-first orchestration for Kimi CLI · **archived June 2026** after upstream replaced the Wire protocol with ACP — post-mortem in the README
 
 *General agent tooling*

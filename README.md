@@ -13,7 +13,7 @@
 
 ### About
 
-**Rust** — on-device speech AI that runs fully offline and ships as a single binary: speech-to-text ([`gigastt`](https://github.com/ekhodzitsky/gigastt)) and speaker diarization ([`polyvoice`](https://github.com/ekhodzitsky/polyvoice)) — the two projects I actively build. Local-first by default: zero cloud APIs, zero vendor lock-in, models ship with the binary. On the side — agent & dev tooling experiments in Rust / Go (see the fold below).
+**Rust** — on-device speech AI that runs fully offline after a one-time model download, shipped as a single binary: speech-to-text ([`gigastt`](https://github.com/ekhodzitsky/gigastt)) and speaker diarization ([`polyvoice`](https://github.com/ekhodzitsky/polyvoice)) — the two projects I actively build. Local-first by default: no cloud APIs at runtime, no vendor lock-in. On the side — agent & dev tooling experiments in Rust / Go (see the fold below).
 
 **Prior production backend** — Node.js / TypeScript (NestJS, Moleculer) and Python (FastAPI, Django): REST APIs and gateways from scratch, message brokers, payment & telephony integrations, large legacy refactors, and email / document (PDF/DOCX) pipelines.
 
@@ -21,7 +21,7 @@
 
 ### [`gigastt`](https://github.com/ekhodzitsky/gigastt) — on-device Russian speech recognition
 
-**Live WebSocket streaming · RTF ~0.10 (≈10× real-time on M1 CPU) · 3.55% WER (golos_crowd_1k, in-domain) · leads on far-field / phone / YouTube in its like-for-like 6-engine benchmark · one binary · no cloud**
+**file RTF ~0.10 (≈10× real-time on M1 CPU) · batch 3.55% WER clean (in-domain; statistical tie vs Vosk) · leads far-field / phone / YouTube in a like-for-like 6-engine bench · one binary · no cloud at runtime**
 
 ```sh
 cargo install gigastt && gigastt serve
@@ -29,18 +29,17 @@ cargo install gigastt && gigastt serve
 # REST API:  http://127.0.0.1:9876/v1/transcribe
 ```
 
-GigaAM v3 + ONNX Runtime · INT8 ~225 MB, negligible WER change · multilingual heads (ru/en/kk/ky/uz) · REST / SSE + async jobs API · punctuation, casing & ITN out of the box · Android FFI + NNAPI · CPU / CoreML / CUDA · cargo / brew / npm / Docker
+GigaAM v3 + ONNX Runtime · INT8 ~225 MB · opt-in multilingual heads (ru/en/kk/ky/uz) · REST / SSE + async jobs · optional punctuation, casing & ITN · Android FFI + NNAPI · CPU / CoreML / CUDA · cargo / brew / npm / pip / Docker
 
 ### [`polyvoice`](https://github.com/ekhodzitsky/polyvoice) — speaker diarization for Rust
 
-**Who spoke when, on CPU, without Python · ~18.5% DER VoxConverse-test (collar 0; pyannote 3.1 = 11.3%) · ~30 MB of models**
+**Who spoke when, on CPU, without Python · ~15% DER VoxConverse-test (collar 0; pyannote 3.1 = 11.3%) · ~8.4 MB MIT INT8 models**
 
 ```sh
-cargo add polyvoice    # Rust
-pip install polyvoice  # Python
+cargo add polyvoice --features "pipeline-native,vbx"
 ```
 
-Silero VAD + Pyannote powerset segmentation + WeSpeaker embeddings · K-means / AHC / NME-SC / VBx · streaming + overlap detection · who-said-what transcription via companion ASR crates · Rust / Python / C FFI / CLI / MCP server · crates.io + PyPI + Docker
+Powerset segmentation + WeSpeaker embeddings + VBx (AHC / K-means / NME-SC alternatives) · overlap resegmentation · who-said-what via companion ASR crates · Rust / Python / C FFI / CLI / MCP · crates.io + PyPI
 
 Powers the diarization feature in [`phonex`](https://github.com/ekhodzitsky/phonex), [`nihostt`](https://github.com/ekhodzitsky/nihostt) and [`phostt`](https://github.com/ekhodzitsky/phostt).
 

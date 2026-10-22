@@ -7,6 +7,7 @@ Also exploring local speech synthesis, English-to-Russian video dubbing, and sea
 <div align="center">
 
 [![Telegram](https://img.shields.io/badge/-%40ekhodzitsky-2CA5E0?logo=telegram&logoColor=white&style=flat-square)](https://t.me/ekhodzitsky)
+[![MAX](https://img.shields.io/badge/MAX-6255FF?style=flat-square)](https://max.ru/u/f9LHodD0cOLDMImCg2KigegOKdqTXqqzxGpcwsfje9FJJGgC8PQRjFj1SEM)
 [![Email](https://img.shields.io/badge/-e%40khodzitsky.ru-EA4335?logo=gmail&logoColor=white&style=flat-square)](mailto:e@khodzitsky.ru)
 
 </div>

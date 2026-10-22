@@ -15,9 +15,9 @@
 
 **Rust** — on-device speech AI that runs fully offline after a one-time model download, shipped as a single binary: speech-to-text ([`gigastt`](https://github.com/ekhodzitsky/gigastt)) and speaker diarization ([`polyvoice`](https://github.com/ekhodzitsky/polyvoice)) — the two projects I actively build — plus the zero-dependency WAVE codec underneath them ([`ryf`](https://github.com/ekhodzitsky/ryf)). Local-first by default: no cloud APIs at runtime, no vendor lock-in. On the side — agent & dev tooling experiments in Rust / Go (see the fold below).
 
-**In private development** — Russian TTS on CosyVoice3, punctuation & casing restoration for ASR output, English-to-Russian video dubbing, semantic search over call recordings.
+**In private development** — Russian TTS on CosyVoice3, English-to-Russian video dubbing, semantic search over call recordings.
 
-**Track record (Apr–Sep 2026, three speech repos)** — ~1,400 commits · ~160k lines of Rust · ~3,000 tests · 100+ tagged releases · weekly WER / DER benchmarks in CI · issues and feature requests from external users.
+**Open-source delivery** — published Rust packages ([gigastt](https://crates.io/crates/gigastt), [polyvoice](https://crates.io/crates/polyvoice), [ryf](https://crates.io/crates/ryf), [rupunct](https://crates.io/crates/rupunct)), [cross-platform CI](https://github.com/ekhodzitsky/rupunct-rs/actions/workflows/ci.yml), and [documented release measurements](https://github.com/ekhodzitsky/polyvoice/releases/tag/v1.0.0).
 
 **Prior production backend** — Node.js / TypeScript (NestJS, Moleculer) and Python (FastAPI, Django): REST APIs and gateways from scratch, message brokers, payment & telephony integrations, large legacy refactors, and email / document (PDF/DOCX) pipelines.
 
@@ -33,11 +33,13 @@ cargo install gigastt && gigastt serve
 # REST API:  http://127.0.0.1:9876/v1/transcribe
 ```
 
-GigaAM v3 + ONNX Runtime · INT8 ~225 MB · opt-in multilingual heads (ru/en/kk/ky/uz) · WebSocket streaming with Silero VAD end-of-utterance · speaker diarization via polyvoice · REST / SSE + async jobs · optional punctuation, casing & ITN · Android FFI + NNAPI · CPU / CoreML / CUDA · cargo / brew / npm / pip / Docker · 64 releases, 1.3k tests
+GigaAM v3 + ONNX Runtime · INT8 ~225 MB · opt-in multilingual heads (ru/en/kk/ky/uz) · WebSocket streaming with Silero VAD end-of-utterance · speaker diarization via polyvoice · REST / SSE + async jobs · optional punctuation, casing & ITN · Android FFI + NNAPI · CPU / CoreML / CUDA · cargo / brew / npm / pip / Docker
 
 ### [`polyvoice`](https://github.com/ekhodzitsky/polyvoice) — speaker diarization for Rust
 
-**Who spoke when, on CPU, without Python · ~15% DER VoxConverse-test (collar 0; pyannote 3.1 = 11.3%) · ~160× real-time on a laptop CPU · ~8.4 MB MIT INT8 models · 7.5k+ crates.io downloads**
+**Native CPU speaker diarization · custom INT8 kernels · no ONNX Runtime in the product engine · Rust / Python / C / CLI · ~8.4 MB MIT neural model pair**
+
+Release **1.0.0**, VoxConverse-test (232 files, micro DER, collar 0, overlap scored): **13.34% DER / 85.7× real-time** on Linux (Ryzen AI 9 HX 370), **13.33% / 192.8×** on macOS (M1 Pro). These are measured release results, not a speed guarantee across hosts. [Release evidence](https://github.com/ekhodzitsky/polyvoice/releases/tag/v1.0.0) · [Benchmark details](https://github.com/ekhodzitsky/polyvoice#speed).
 
 ```sh
 cargo add polyvoice --features "pipeline-native,vbx"
@@ -52,6 +54,7 @@ Powers the diarization feature in [`gigastt`](https://github.com/ekhodzitsky/gig
 ### More on-device speech
 
 - [**`ryf`**](https://github.com/ekhodzitsky/ryf) — WAVE codec, zero default deps · PCM / IEEE float / G.711 / G.722 / GSM 06.10 / ADPCM · RIFF / RF64 / BW64 / Wave64 · ffmpeg as test oracle · WAV ingest for gigastt and polyvoice · `crates.io`
+- [**`rupunct`**](https://github.com/ekhodzitsky/rupunct-rs) — Russian punctuation & casing restoration · Rust library + CLI / JSONL · local Q8 inference · [`crates.io`](https://crates.io/crates/rupunct)
 - [**`phonex`**](https://github.com/ekhodzitsky/phonex) — multilingual on-device STT engine · offline + streaming, single binary, HTTP / gRPC / FFI · `crates.io`
 - [**`nihostt`**](https://github.com/ekhodzitsky/nihostt) — Japanese STT server (ReazonSpeech-k2-v2) · WebSocket / REST / SSE · `crates.io` + Homebrew + Docker
 - [**`phostt`**](https://github.com/ekhodzitsky/phostt) — Vietnamese STT server (Zipformer-vi RNN-T) · streaming · `crates.io` + `pypi`

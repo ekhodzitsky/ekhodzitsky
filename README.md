@@ -4,4 +4,9 @@ My background is commercial backend development since 2019: Node.js, TypeScript,
 
 Also exploring local speech synthesis, English-to-Russian video dubbing, and search over recorded conversations.
 
-[Email](mailto:e@khodzitsky.ru) · [Telegram](https://t.me/ekhodzitsky)
+<div align="center">
+
+[![Telegram](https://img.shields.io/badge/-%40ekhodzitsky-2CA5E0?logo=telegram&logoColor=white&style=flat-square)](https://t.me/ekhodzitsky)
+[![Email](https://img.shields.io/badge/-e%40khodzitsky.ru-EA4335?logo=gmail&logoColor=white&style=flat-square)](mailto:e@khodzitsky.ru)
+
+</div>
